@@ -1,0 +1,21 @@
+{% extends "menu.html" %}
+
+{% block pagename %}
+    <h1>Кинотеатр</h1>
+{% endblock%}
+
+{% block menu %}
+    {{ block.super }}
+{% endblock%}
+
+{% block content %}
+    {% for film in my_films %}
+        <h2>{{ film }} <button>Купить</button></h2></h2>
+    {% endfor %}
+    {{ block.super }}
+{% endblock%}
+
+
+<!--    <h2>{{my_films.0}}  <button>Купить</button></h2>-->
+<!--    <h2>{{my_films.1}}  <button>Купить</button></h2>-->
+<!--    <h2>{{my_films.2}}  <button>Купить</button></h2>-->
